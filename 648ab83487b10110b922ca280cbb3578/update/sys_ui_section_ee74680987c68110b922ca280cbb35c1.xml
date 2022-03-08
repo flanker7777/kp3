@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="事務局用入力フィールド" section_id="ee74680987c68110b922ca280cbb35c1" sys_domain="global" table="x_563475_3_kp1" version="3" view="Office_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_choice_1</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:17:47</sys_created_on>
+            <sys_id>7c4520de87c28510b922ca280cbb35c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="事務局用入力フィールド" display_value="事務局用入力フィールド" name="x_563475_3_kp1" sys_domain="global" view="a762d5c6877d0110b922ca280cbb3546">ee74680987c68110b922ca280cbb35c1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:17:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:17:47</sys_created_on>
+            <sys_id>f04520de87c28510b922ca280cbb35c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="事務局用入力フィールド" display_value="事務局用入力フィールド" name="x_563475_3_kp1" sys_domain="global" view="a762d5c6877d0110b922ca280cbb3546">ee74680987c68110b922ca280cbb35c1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:17:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:17:47</sys_created_on>
+            <sys_id>784520de87c28510b922ca280cbb35c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="事務局用入力フィールド" display_value="事務局用入力フィールド" name="x_563475_3_kp1" sys_domain="global" view="a762d5c6877d0110b922ca280cbb3546">ee74680987c68110b922ca280cbb35c1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:17:47</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:17:47</sys_created_on>
+            <sys_id>fc4520de87c28510b922ca280cbb35c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="事務局用入力フィールド" display_value="事務局用入力フィールド" name="x_563475_3_kp1" sys_domain="global" view="a762d5c6877d0110b922ca280cbb3546">ee74680987c68110b922ca280cbb35c1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:17:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>事務局用入力フィールド</caption>
+            <header>false</header>
+            <name>x_563475_3_kp1</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-03 11:01:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee74680987c68110b922ca280cbb35c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_563475_3_kp1</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+            <sys_update_name>sys_ui_section_ee74680987c68110b922ca280cbb35c1</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-03 11:01:56</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Office View" name="Office_View">a762d5c6877d0110b922ca280cbb3546</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

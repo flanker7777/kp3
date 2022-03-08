@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="091364c587c68110b922ca280cbb35dd" sys_domain="global" table="x_563475_3_kp1" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:15:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>94b4e09e87c28510b922ca280cbb35f3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_563475_3_kp1" name="x_563475_3_kp1" sys_domain="global" view="Default view">091364c587c68110b922ca280cbb35dd</sys_ui_form>
+            <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-03 10:55:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4913a4c587c68110b922ca280cbb3538</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_563475_3_kp1" name="x_563475_3_kp1" sys_domain="global" view="Default view">091364c587c68110b922ca280cbb35dd</sys_ui_form>
+            <sys_ui_section caption="申請内容の説明" display_value="申請内容の説明" name="x_563475_3_kp1" sys_domain="global" view="Default view">891364c587c68110b922ca280cbb35db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-03 10:55:50</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_563475_3_kp1</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-03 10:55:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>091364c587c68110b922ca280cbb35dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_563475_3_kp1</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+            <sys_update_name>sys_ui_form_sections_091364c587c68110b922ca280cbb35dd</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-03 10:55:50</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

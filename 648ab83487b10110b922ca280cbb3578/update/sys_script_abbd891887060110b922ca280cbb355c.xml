@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sysapproval_approver</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sysapproval_approver">stateCHANGESTOrejected^ORstateCHANGESTOapproved^ORstateCHANGESTOcancelled^ORstateCHANGESTOrequested^ORstateCHANGESTOnot_required^EQ<item display_value="Send Back to Submitter" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="rejected"/>
+            <item display_value="Approved" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="approved"/>
+            <item display_value="Send Back to previous Approver" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="cancelled"/>
+            <item display_value="Requested" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="requested"/>
+            <item display_value="No Longer Required" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="not_required"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>承認・却下のコメントをactivitystreamに載せる</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+	
+	var gr = current.sysapproval.getRefRecord();
+	if (gs.getUserID() == current.approver)
+		gr.comments = "承認申請は" + current.approver.getDisplayValue() + "によって" + current.state.getDisplayValue()  + "とされました。" + "\n"
+			+ current.comments.getDisplayValue();
+	
+	else
+		gr.comments = "承認申請は" + current.approver.getDisplayValue() + "によって代理で" + current.state.getDisplayValue() + "とされました。" + "\n" + current.comments.getDisplayValue();
+	
+	gr.update();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 06:09:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abbd891887060110b922ca280cbb355c</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>承認・却下のコメントをactivitystreamに載せる</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name>sys_script_abbd891887060110b922ca280cbb355c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 08:48:54</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=abbd891887060110b922ca280cbb355c"/>
+</record_update>

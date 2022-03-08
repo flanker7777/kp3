@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="一次承認者用入力フォーム（プロト）" section_id="205b54b58731c110b922ca280cbb35ff" sys_domain="global" table="x_563475_3_kp1" version="3" view="1st_Approver">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_choice_1</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:16:15</sys_created_on>
+            <sys_id>6ae4e49e87c28510b922ca280cbb355b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="一次承認者用入力フォーム（プロト）" display_value="一次承認者用入力フォーム（プロト）" name="x_563475_3_kp1" sys_domain="global" view="dc5b54b58731c110b922ca280cbb3593">205b54b58731c110b922ca280cbb35ff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:16:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:16:15</sys_created_on>
+            <sys_id>eee4e49e87c28510b922ca280cbb355b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="一次承認者用入力フォーム（プロト）" display_value="一次承認者用入力フォーム（プロト）" name="x_563475_3_kp1" sys_domain="global" view="dc5b54b58731c110b922ca280cbb3593">205b54b58731c110b922ca280cbb35ff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:16:15</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-07 08:16:15</sys_created_on>
+            <sys_id>66e4e49e87c28510b922ca280cbb355c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="一次承認者用入力フォーム（プロト）" display_value="一次承認者用入力フォーム（プロト）" name="x_563475_3_kp1" sys_domain="global" view="dc5b54b58731c110b922ca280cbb3593">205b54b58731c110b922ca280cbb35ff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-07 08:16:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>一次承認者用入力フォーム（プロト）</caption>
+            <header>false</header>
+            <name>x_563475_3_kp1</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-02-21 08:01:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>205b54b58731c110b922ca280cbb35ff</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>x_563475_3_kp1</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+            <sys_update_name>sys_ui_section_205b54b58731c110b922ca280cbb35ff</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-03 10:57:48</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="1st Approver" name="1st_Approver">dc5b54b58731c110b922ca280cbb3593</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

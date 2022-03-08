@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  var c = this;
+ c.uiAction = function(action) {
+ c.data.action = action
+ c.server.update().then(function() {
+ c.data.action = '';
+ })
+ }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>ticketaction</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>TicketAction</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+ // Get table & sys_id
+ data.table = $sp.getParameter('table');
+ data.sys_id = $sp.getParameter("sys_id");
+
+	// Valid GlideRecord
+	gr = new GlideRecord(data.table);
+	if (!gr.isValid())
+		return;
+	// Valid sys_id
+	if (!gr.get(data.sys_id))
+		return;
+  // input
+  if (input && input.action) {
+  var action = input.action;
+		
+  if (data.table == 'x_563475_3_kp1') {
+		if (action == 'resubmit') {
+			gr.setValue('state', 2);
+			gr.setValue('approval', "申請済み");
+			gr.setValue('comments',"再申請しましたー")
+			gr.update();
+		}
+		if (action == 'cancel') {
+			gr.setValue('state', -1);
+			gr.setValue('approval', "却下");
+			gr.setValue('comments',"取り下げましたー")
+			gr.update();
+		}
+  if (data.table == 'sysapproval_approver') {
+		if (action == 'resubmit') {
+			gr.setValue('state', "requested");
+			gr.update();
+		}
+  }
+  }
+    
+  }})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-02 07:24:03</sys_created_on>
+        <sys_id>8109aee087464110b922ca280cbb357f</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>TicketAction</sys_name>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name>sp_widget_8109aee087464110b922ca280cbb357f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 23:52:33</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+ <div class="panel-heading">アクション</div>
+ <div class="panel-body">
+ <button type="button" class="btn btn-primary btn-block" ng-click="c.uiAction('resubmit')">再申請</button>
+ <button type="button" class="btn btn-primary btn-block" ng-click="c.uiAction('cancel')">取り下げ</button>
+</div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
