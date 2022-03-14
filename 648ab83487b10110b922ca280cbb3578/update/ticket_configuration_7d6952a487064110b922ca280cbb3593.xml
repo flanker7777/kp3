@@ -4,7 +4,7 @@
         <action_widget_param/>
         <active>true</active>
         <advanced>false</advanced>
-        <info_fields>priority,assigned_to,description,approval_history,jimukyoku</info_fields>
+        <info_fields>priority,assigned_to,jimukyoku,u_choice_1</info_fields>
         <info_widget/>
         <info_widget_param/>
         <show_description>always</show_description>
@@ -15,7 +15,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d6952a487064110b922ca280cbb3593</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>x_563475_3_kp1</sys_name>
         <sys_overrides/>
         <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
@@ -23,7 +23,7 @@
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name>ticket_configuration_7d6952a487064110b922ca280cbb3593</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-03 04:18:08</sys_updated_on>
+        <sys_updated_on>2022-03-08 23:47:01</sys_updated_on>
         <table>x_563475_3_kp1</table>
     </ticket_configuration>
 </record_update>

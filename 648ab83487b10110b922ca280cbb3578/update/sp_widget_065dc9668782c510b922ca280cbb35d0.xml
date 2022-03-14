@@ -18,10 +18,10 @@
         <docs/>
         <field_list/>
         <has_preview>true</has_preview>
-        <id>ticketaction</id>
+        <id>ticketactionbackup</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
-        <name>TicketAction</name>
+        <name>ticketactionbackup</name>
         <option_schema/>
         <public>true</public>
         <roles/>
@@ -38,28 +38,10 @@
 	// Valid sys_id
 	if (!gr.get(data.sys_id))
 		return;
-	//ボタンvisibility
-	 //ドラフトステータスの場合、申請者には再提出ボタン表示
-    if (data.table == 'x_563475_3_kp1' && (gr.opened_by == gs.getUserID()) && (gr.state == '-10')){
-		data.showWidget = true;
-		data.showResubmit = true;
-		data.showCancelled = true;
-	}
-	 //申請済み、承認前の場合、申請者にはキャンセルボタン表示
-    else if (data.table == 'x_563475_3_kp1' && gr.active == true && (gr.opened_by == gs.getUserID()) && (gr.state == '2'||gr.state == '1'||gr.state == '3'||gr.state == '4')){
-		data.showWidget = true;
-		data.showResubmit = false;
-		data.showCancelled = true;
-	}
-	//それ以外の場合は非表示
-    else {
-		data.showWidget = false;
-    data.showResubmit = false;
-		data.showCancelled = false;
-	  }
   // input
   if (input && input.action) {
   var action = input.action;
+		
   if (data.table == 'x_563475_3_kp1') {
 		if (action == 'resubmit') {
 			gr.setValue('state', 2);
@@ -78,27 +60,29 @@
 			gr.setValue('state', "requested");
 			gr.update();
 		}
-	}
-  }}})();]]></script>
+  }
+  }
+    
+  }})();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-03-02 07:24:03</sys_created_on>
-        <sys_id>8109aee087464110b922ca280cbb357f</sys_id>
-        <sys_mod_count>79</sys_mod_count>
-        <sys_name>TicketAction</sys_name>
+        <sys_created_on>2022-03-08 05:51:23</sys_created_on>
+        <sys_id>065dc9668782c510b922ca280cbb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ticketactionbackup</sys_name>
         <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
-        <sys_update_name>sp_widget_8109aee087464110b922ca280cbb357f</sys_update_name>
+        <sys_update_name>sp_widget_065dc9668782c510b922ca280cbb35d0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-11 04:07:33</sys_updated_on>
-        <template><![CDATA[<div class="panel b" ng-if="data.showWidget">
-  <div class="panel-heading bg-primary">アクション</div>
-  <div class="panel-body">
-    <button type="button" class="btn btn-default btn-block" ng-click="c.uiAction('resubmit')" ng-if="data.showResubmit">再申請  (修正箇所を投稿してください)</button>
-    <button type="button" class="btn btn-danger btn-block" ng-click="c.uiAction('cancel')" ng-if="data.showCancelled">取り下げ</button>
-  </div>
+        <sys_updated_on>2022-03-08 05:51:23</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+ <div class="panel-heading">アクション</div>
+ <div class="panel-body">
+ <button type="button" class="btn btn-primary btn-block" ng-click="c.uiAction('resubmit')">再申請</button>
+ <button type="button" class="btn btn-primary btn-block" ng-click="c.uiAction('cancel')">取り下げ</button>
+</div>
 </div>]]></template>
     </sp_widget>
 </record_update>

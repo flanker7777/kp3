@@ -27,8 +27,8 @@
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
-        <mandatory>false</mandatory>
+        <internal_type display_value="文字列">string</internal_type>
+        <mandatory>true</mandatory>
         <max_length>40</max_length>
         <name>x_563475_3_kp1</name>
         <next_element/>
@@ -49,14 +49,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-02-21 08:01:40</sys_created_on>
         <sys_id>245b94b58731c110b922ca280cbb3508</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>審査判定</sys_name>
         <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name>sys_dictionary_x_563475_3_kp1_u_choice_1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 09:09:15</sys_updated_on>
+        <sys_updated_on>2022-03-08 23:59:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

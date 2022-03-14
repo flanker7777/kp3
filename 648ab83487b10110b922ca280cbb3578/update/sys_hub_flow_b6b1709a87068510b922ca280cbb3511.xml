@@ -11,12 +11,12 @@
         <copied_from_name/>
         <description/>
         <internal_name>_</internal_name>
-        <label_cache>[{"name":"ac56fd57-d834-4230-a351-b06445117710.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record.sysapproval","label":"1➛Approval Record➛Approval for","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"sysapproval_approver","column_name":"sysapproval"},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Table","label":"1➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record","label":"1➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.table_name","label":"3➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.record","label":"3➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.table_name","label":"1➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.record","label":"1➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.approval_state","label":"4➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.work_notes","label":"Trigger➛申請書承認アプリ Record➛審査ノート","reference":"","reference_display":"審査ノート","type":"journal_input","base_type":"journal_input","parent_table_name":"x_563475_3_kp1","column_name":"work_notes"}]</label_cache>
+        <label_cache>[{"name":"Updated_1.current.work_notes","label":"Trigger➛申請書承認アプリ Record➛審査ノート","reference":"","reference_display":"審査ノート","type":"journal_input","base_type":"journal_input","parent_table_name":"x_563475_3_kp1","column_name":"work_notes"},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"},{"name":"Updated_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.approval_state","label":"4➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.record","label":"1➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.table_name","label":"1➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.record","label":"3➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.table_name","label":"3➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record","label":"1➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Table","label":"1➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record.sysapproval","label":"1➛Approval Record➛Approval for","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"sysapproval_approver","column_name":"sysapproval"},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>938230da87068510b922ca280cbb353c</master_snapshot>
         <name>申請書承認アプリ 事務局から一次承認者へ差戻し</name>
         <natlang/>
         <outputs/>
-        <remote_trigger_id>c0777756878e8510b922ca280cbb35e1</remote_trigger_id>
+        <remote_trigger_id>0a685ce787820110b922ca280cbb3585</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b6b1709a87068510b922ca280cbb3511</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>申請書承認アプリ 事務局から一次承認者へ差戻し</sys_name>
         <sys_overrides/>
         <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name>sys_hub_flow_b6b1709a87068510b922ca280cbb3511</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:34:01</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=b6b1709a87068510b922ca280cbb3511"/>
@@ -57,42 +57,42 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-03-07 23:36:03</sys_created_on>
+        <sys_created_on>2022-03-11 04:34:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c0777756878e8510b922ca280cbb35e1</sys_id>
+        <sys_id>0a685ce787820110b922ca280cbb3585</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:34:00</sys_updated_on>
         <table>x_563475_3_kp1</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"table":"sys_trigger_runner_mapping","id":"48777756878e8510b922ca280cbb35e1","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <data>{"table":"sys_trigger_runner_mapping","id":"82685ce787820110b922ca280cbb3586","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
         <identifier>b6b1709a87068510b922ca280cbb3511</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-03-07 23:36:03</sys_created_on>
-        <sys_id>48777756878e8510b922ca280cbb35e1</sys_id>
+        <sys_created_on>2022-03-11 04:34:00</sys_created_on>
+        <sys_id>82685ce787820110b922ca280cbb3586</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
-        <trigger display_value="">c0777756878e8510b922ca280cbb35e1</trigger>
+        <sys_updated_on>2022-03-11 04:34:00</sys_updated_on>
+        <trigger display_value="">0a685ce787820110b922ca280cbb3585</trigger>
     </sys_trigger_runner_mapping>
     <sys_json_chunk action="INSERT_OR_UPDATE">
         <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
-        <document_id>48777756878e8510b922ca280cbb35e1</document_id>
+        <document_id>82685ce787820110b922ca280cbb3586</document_id>
         <field>trigger_runner</field>
         <length>144</length>
         <position>0</position>
         <source_table>sys_trigger_runner_mapping</source_table>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-03-07 23:36:03</sys_created_on>
-        <sys_id>0c777756878e8510b922ca280cbb35e1</sys_id>
+        <sys_created_on>2022-03-11 04:34:00</sys_created_on>
+        <sys_id>4a685ce787820110b922ca280cbb3586</sys_id>
     </sys_json_chunk>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b6b1709a87068510b922ca280cbb3511^sys_idNOT IN48777756878e8510b922ca280cbb35e1"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b6b1709a87068510b922ca280cbb3511^sys_idNOT IN82685ce787820110b922ca280cbb3586"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=b6b1709a87068510b922ca280cbb3511^sys_idNOT IN0f8230da87068510b922ca280cbb350a"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -103,11 +103,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:49</sys_created_on>
         <sys_id>0f8230da87068510b922ca280cbb350a</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
-        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <sys_updated_on>2022-03-11 04:34:01</sys_updated_on>
+        <trigger_definition display_value="更新済み">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
@@ -231,14 +231,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:49</sys_created_on>
         <sys_id>838230da87068510b922ca280cbb3503</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:34:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -312,14 +312,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:49</sys_created_on>
         <sys_id>c782fc9a87068510b922ca280cbb35f6</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:34:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -335,7 +335,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDf3677756808e8510e3af75f6bd7d6b80,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDa1685ce78a8201108bc492d356a7a522,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -366,7 +366,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="文字列">string</internal_type>
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -393,14 +393,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:49</sys_created_on>
         <sys_id>cf82fc9a87068510b922ca280cbb35fc</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:34:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -416,7 +416,7 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type display_value="レコードを更新">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -428,10 +428,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 11:07:48</sys_created_on>
         <sys_id>2f2c055687868510b922ca280cbb35bb</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_by>事務局担当者</sys_updated_by>
+        <sys_updated_on>2022-03-14 01:16:45</sys_updated_on>
         <ui_id>f87f1095-5548-4cba-a6d9-655d00f10c2f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2f2c055687868510b922ca280cbb35bb"/>
@@ -457,10 +457,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 11:07:48</sys_created_on>
         <sys_id>a32c055687868510b922ca280cbb35be</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 11:07:48</sys_updated_on>
-        <value>u_choice_1=</value>
+        <sys_updated_on>2022-03-11 04:33:57</sys_updated_on>
+        <value>u_choice_1=^state=2</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=2f2c055687868510b922ca280cbb35bb"/>
@@ -503,7 +503,7 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type display_value="レコードの検索">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
@@ -515,10 +515,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 10:19:47</sys_created_on>
         <sys_id>b721c11a87468510b922ca280cbb35fa</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>94</sys_mod_count>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_by>事務局担当者</sys_updated_by>
+        <sys_updated_on>2022-03-14 01:16:45</sys_updated_on>
         <ui_id>30e68c87-93e2-4968-b89b-ed1d85a4f8b0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b721c11a87468510b922ca280cbb35fa"/>
@@ -616,10 +616,10 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type display_value="レコードを更新">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="申請書承認アプリ 事務局から一次承認者へ差戻し">b6b1709a87068510b922ca280cbb3511</flow>
         <order>2</order>
@@ -628,10 +628,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 11:14:52</sys_created_on>
         <sys_id>f2cd45d687868510b922ca280cbb3583</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
+        <sys_updated_by>事務局担当者</sys_updated_by>
+        <sys_updated_on>2022-03-14 01:16:45</sys_updated_on>
         <ui_id>ac56fd57-d834-4230-a351-b06445117710</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f2cd45d687868510b922ca280cbb3583"/>
@@ -775,18 +775,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"2b8230da87068510b922ca280cbb35d1","name":"plan","plan_signature":null}}</plan>
         <plan_id>b6b1709a87068510b922ca280cbb3511</plan_id>
-        <snapshot>938230da87068510b922ca280cbb353c</snapshot>
+        <snapshot>6508cb10879e8110b922ca280cbb35b2</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2b8230da87068510b922ca280cbb35d1</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
-        <trigger display_value="">c0777756878e8510b922ca280cbb35e1</trigger>
+        <sys_updated_on>2022-03-11 04:34:00</sys_updated_on>
+        <trigger display_value="">0a685ce787820110b922ca280cbb3585</trigger>
     </sys_flow_trigger_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -799,7 +799,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>_</internal_name>
-        <label_cache>[{"name":"ac56fd57-d834-4230-a351-b06445117710.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record.sysapproval","label":"1➛Approval Record➛Approval for","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"sysapproval_approver","column_name":"sysapproval"},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Table","label":"1➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record","label":"1➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.table_name","label":"3➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.record","label":"3➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.table_name","label":"1➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.record","label":"1➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.approval_state","label":"4➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.work_notes","label":"Trigger➛申請書承認アプリ Record➛審査ノート","reference":"","reference_display":"審査ノート","type":"journal_input","base_type":"journal_input","parent_table_name":"x_563475_3_kp1","column_name":"work_notes"}]</label_cache>
+        <label_cache>[{"name":"Updated_1.current.work_notes","label":"Trigger➛申請書承認アプリ Record➛審査ノート","reference":"","reference_display":"審査ノート","type":"journal_input","base_type":"journal_input","parent_table_name":"x_563475_3_kp1","column_name":"work_notes"},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a39a325-6910-43df-a0bc-e9aa5010fe44.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f3523cde-c4e9-4271-b0e4-d53d90f83ace.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"},{"name":"Updated_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d581742-bc7f-470b-87c2-6d4e37e311f7.approval_state","label":"4➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.record","label":"1➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.table_name","label":"1➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5de7eb25-7a3c-4e4e-8794-7f470c5aedac.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.record","label":"3➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.table_name","label":"3➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9fd2ace2-46ba-4479-ad2b-bbc63d62e40b.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c103198d-0ce2-4807-bd2c-af40361630ec.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record","label":"1➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Table","label":"1➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30e68c87-93e2-4968-b89b-ed1d85a4f8b0.Record.sysapproval","label":"1➛Approval Record➛Approval for","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"sysapproval_approver","column_name":"sysapproval"},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.record","label":"3➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.table_name","label":"3➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87f1095-5548-4cba-a6d9-655d00f10c2f.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.table_name","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac56fd57-d834-4230-a351-b06445117710.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>申請書承認アプリ 事務局から一次承認者へ差戻し</name>
         <natlang/>
@@ -816,7 +816,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>938230da87068510b922ca280cbb353c</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -824,7 +824,7 @@
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:02</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=938230da87068510b922ca280cbb353c"/>
@@ -839,11 +839,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:51</sys_created_on>
         <sys_id>978230da87068510b922ca280cbb35bd</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:03</sys_updated_on>
-        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <sys_updated_on>2022-03-11 04:34:00</sys_updated_on>
+        <trigger_definition display_value="更新済み">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
@@ -909,7 +909,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDf3677756808e8510e3af75f6bd7d6b80,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDa1685ce78a8201108bc492d356a7a522,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -940,7 +940,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="文字列">string</internal_type>
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -967,14 +967,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:50</sys_created_on>
         <sys_id>1b8230da87068510b922ca280cbb3569</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:02</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1048,14 +1048,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:50</sys_created_on>
         <sys_id>5f8230da87068510b922ca280cbb353f</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:02</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1129,14 +1129,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 09:15:51</sys_created_on>
         <sys_id>d38230da87068510b922ca280cbb3574</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:02</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1152,8 +1152,8 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="レコードを更新">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="レコードを更新">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
@@ -1164,10 +1164,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 11:07:51</sys_created_on>
         <sys_id>0c3c455687868510b922ca280cbb355c</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:02</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
         <ui_id>f87f1095-5548-4cba-a6d9-655d00f10c2f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c3c455687868510b922ca280cbb355c"/>
@@ -1193,10 +1193,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 11:07:51</sys_created_on>
         <sys_id>443c455687868510b922ca280cbb355e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 11:07:51</sys_updated_on>
-        <value>u_choice_1=</value>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
+        <value>u_choice_1=^state=2</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=0c3c455687868510b922ca280cbb355c"/>
@@ -1239,8 +1239,8 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_type display_value="レコードの検索">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="レコードの検索">b93f42810b30030085c083eb37673a63</action_type_parent>
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
@@ -1251,10 +1251,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 10:19:49</sys_created_on>
         <sys_id>2031051a87468510b922ca280cbb35d4</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:02</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
         <ui_id>30e68c87-93e2-4968-b89b-ed1d85a4f8b0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2031051a87468510b922ca280cbb35d4"/>
@@ -1352,8 +1352,8 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="レコードを更新">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="レコードを更新">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
@@ -1364,10 +1364,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-07 11:14:54</sys_created_on>
         <sys_id>6fcd85d687868510b922ca280cbb3558</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-07 23:36:02</sys_updated_on>
+        <sys_updated_on>2022-03-11 04:33:59</sys_updated_on>
         <ui_id>ac56fd57-d834-4230-a351-b06445117710</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6fcd85d687868510b922ca280cbb3558"/>

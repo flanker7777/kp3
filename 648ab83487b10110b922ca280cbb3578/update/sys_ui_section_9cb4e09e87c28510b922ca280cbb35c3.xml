@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>50b4e09e87c28510b922ca280cbb35fe</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>916b6dae87c2c510b922ca280cbb3564</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">3b10c3c6878e4510b922ca280cbb3563</sys_ui_formatter>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>dcb4e09e87c28510b922ca280cbb35fe</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>916b6dae87c2c510b922ca280cbb3565</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,139 +32,153 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>54b4e09e87c28510b922ca280cbb35ff</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>196b6dae87c2c510b922ca280cbb3565</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_by</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>9d6b6dae87c2c510b922ca280cbb3565</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assigned_to</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>d8b4e09e87c28510b922ca280cbb35ff</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>156b6dae87c2c510b922ca280cbb3566</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>jimukyoku</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>50b4249e87c28510b922ca280cbb3500</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>996b6dae87c2c510b922ca280cbb3566</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>activity.xml</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>d4b4249e87c28510b922ca280cbb3500</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>116b6dae87c2c510b922ca280cbb3567</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>10b4249e87c28510b922ca280cbb3501</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>596b6dae87c2c510b922ca280cbb3567</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>priority</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>94b4249e87c28510b922ca280cbb3501</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>dd6b6dae87c2c510b922ca280cbb3567</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>1cb4249e87c28510b922ca280cbb3501</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>556b6dae87c2c510b922ca280cbb3568</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>approval</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>90b4249e87c28510b922ca280cbb3502</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>d96b6dae87c2c510b922ca280cbb3568</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>watch_list</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>18b4249e87c28510b922ca280cbb3502</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>516b6dae87c2c510b922ca280cbb3569</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>comments</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-07 08:15:18</sys_created_on>
-            <sys_id>9cb4249e87c28510b922ca280cbb3502</sys_id>
+            <sys_created_on>2022-03-08 08:02:41</sys_created_on>
+            <sys_id>d56b6dae87c2c510b922ca280cbb3569</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="工程" display_value="工程" name="x_563475_3_kp1" sys_domain="global" view="Default view">9cb4e09e87c28510b922ca280cbb35c3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-07 08:15:18</sys_updated_on>
+            <sys_updated_on>2022-03-08 08:02:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -190,7 +204,7 @@
             <sys_updated_on>2022-03-07 08:15:17</sys_updated_on>
             <sys_user/>
             <title>false</title>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="デフォルトビュー" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_section>
     </sys_ui_section>
