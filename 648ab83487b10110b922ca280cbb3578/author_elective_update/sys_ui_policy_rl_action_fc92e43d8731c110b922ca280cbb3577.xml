@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_rl_action">
+    <sys_ui_policy_rl_action action="DELETE">
+        <list>sysapproval_approver.sysapproval</list>
+        <sys_class_name>sys_ui_policy_rl_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 08:33:35</sys_created_on>
+        <sys_id>fc92e43d8731c110b922ca280cbb3577</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysapproval_approver.sysapproval</sys_name>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name>sys_ui_policy_rl_action_fc92e43d8731c110b922ca280cbb3577</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 08:33:35</sys_updated_on>
+        <ui_policy display_value="審査が却下の場合に却下理由を入力">a33164f98731c110b922ca280cbb3584</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_rl_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</application>
+        <file_path/>
+        <instance_id>370d5bd8dbcb738407072f17d49619d9</instance_id>
+        <instance_name>dev89931</instance_name>
+        <name>sys_ui_policy_rl_action_fc92e43d8731c110b922ca280cbb3577</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_rl_action"><sys_ui_policy_rl_action action="INSERT_OR_UPDATE"><list>sysapproval_approver.sysapproval</list><sys_class_name>sys_ui_policy_rl_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-21 08:33:35</sys_created_on><sys_id>fc92e43d8731c110b922ca280cbb3577</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sysapproval_approver.sysapproval</sys_name><sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package><sys_policy/><sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope><sys_update_name>sys_ui_policy_rl_action_fc92e43d8731c110b922ca280cbb3577</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-21 08:33:35</sys_updated_on><ui_policy display_value="審査が却下の場合に却下理由を入力">a33164f98731c110b922ca280cbb3584</ui_policy><visible>true</visible></sys_ui_policy_rl_action></record_update>]]></payload>
+        <payload_hash>-113267826</payload_hash>
+        <record_name>sysapproval_approver.sysapproval</record_name>
+        <reverted_from/>
+        <source>a88ab83487b10110b922ca280cbb357a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 08:33:35</sys_created_on>
+        <sys_id>88a2ecf98731c110b922ca280cbb35d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f1b6a262c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 08:33:35</sys_updated_on>
+        <type>UI Policy Related List Action</type>
+        <update_guid>c0a2ecf91331c110adce793d607bd7d7</update_guid>
+        <update_guid_history>c0a2ecf91331c110adce793d607bd7d7:-113267826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 05:44:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_rl_action">sys_ui_policy_rl_action</sys_db_object>
+        <sys_id>2219f231b05e4e2f94a026cf2a62f7e9</sys_id>
+        <sys_metadata>fc92e43d8731c110b922ca280cbb3577</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysapproval_approver.sysapproval</sys_name>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_scope_delete display_value="">2dd86e927ee649609a5b3a0230a10d24</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_rl_action_fc92e43d8731c110b922ca280cbb3577</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_rl_action_fc92e43d8731c110b922ca280cbb3577">88a2ecf98731c110b922ca280cbb35d7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-22 05:44:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

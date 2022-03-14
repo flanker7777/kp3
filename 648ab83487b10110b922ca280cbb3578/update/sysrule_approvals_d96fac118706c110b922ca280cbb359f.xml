@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_approvals">
+    <sysrule_approvals action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition table="x_563475_3_kp1">state=2^EQ<item display_value="Waiting for 1st Approver" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <group/>
+        <match_conditions>ALL</match_conditions>
+        <name>申請アプリ　再申請時にsysapproval approvalをrequeste</name>
+        <optional_group/>
+        <order>1</order>
+        <run_rule_before>true</run_rule_before>
+        <script/>
+        <set_state>requested</set_state>
+        <sys_class_name>sysrule_approvals</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:28:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d96fac118706c110b922ca280cbb359f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>申請アプリ　再申請時にsysapproval approvalをrequeste</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name>sysrule_approvals_d96fac118706c110b922ca280cbb359f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 04:59:48</sys_updated_on>
+        <table>x_563475_3_kp1</table>
+        <user/>
+    </sysrule_approvals>
+</record_update>

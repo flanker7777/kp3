@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ticket_tab_configuration">
+    <ticket_tab_configuration action="DELETE">
+        <advanced>false</advanced>
+        <order>30</order>
+        <parent display_value="x_563475_3_kp1">7d6952a487064110b922ca280cbb3593</parent>
+        <script><![CDATA[/**
+ * The script should evaluate true/false or `answer` populated with true/false which validates if a tab is visible 
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+]]></script>
+        <sys_class_name>ticket_tab_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-03 01:07:58</sys_created_on>
+        <sys_id>ca7c963c87028110b922ca280cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name>ticket_tab_configuration_ca7c963c87028110b922ca280cbb35da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-03 01:07:58</sys_updated_on>
+        <tab_name>Associated Requests</tab_name>
+        <table>x_563475_3_kp1</table>
+        <type>associated_requests</type>
+        <visible/>
+        <widget/>
+        <widget_param/>
+    </ticket_tab_configuration>
+    <sys_translated_text action="DELETE" query="documentkey=ca7c963c87028110b922ca280cbb35da"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</application>
+        <file_path/>
+        <instance_id>370d5bd8dbcb738407072f17d49619d9</instance_id>
+        <instance_name>dev89931</instance_name>
+        <name>ticket_tab_configuration_ca7c963c87028110b922ca280cbb35da</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="ticket_tab_configuration"&gt;&lt;ticket_tab_configuration action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;order&gt;30&lt;/order&gt;&lt;parent display_value="x_563475_3_kp1"&gt;7d6952a487064110b922ca280cbb3593&lt;/parent&gt;&lt;script&gt;&lt;![CDATA[/**
+ * The script should evaluate true/false or `answer` populated with true/false which validates if a tab is visible 
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;ticket_tab_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-03 01:07:58&lt;/sys_created_on&gt;&lt;sys_id&gt;ca7c963c87028110b922ca280cbb35da&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="申請書承認アプリ" source="x_563475_3"&gt;648ab83487b10110b922ca280cbb3578&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="申請書承認アプリ"&gt;648ab83487b10110b922ca280cbb3578&lt;/sys_scope&gt;&lt;sys_update_name&gt;ticket_tab_configuration_ca7c963c87028110b922ca280cbb35da&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-03 01:07:58&lt;/sys_updated_on&gt;&lt;tab_name&gt;Associated Requests&lt;/tab_name&gt;&lt;table&gt;x_563475_3_kp1&lt;/table&gt;&lt;type&gt;associated_requests&lt;/type&gt;&lt;visible/&gt;&lt;widget/&gt;&lt;widget_param/&gt;&lt;/ticket_tab_configuration&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ca7c963c87028110b922ca280cbb35da"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2017279630</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>a88ab83487b10110b922ca280cbb357a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-03 01:07:58</sys_created_on>
+        <sys_id>7d8c923c87028110b922ca280cbb356b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f4d51c4e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-03 01:07:58</sys_updated_on>
+        <type>Tab Configuration</type>
+        <update_guid>b58c923c11028110feb7b8b63714f56b</update_guid>
+        <update_guid_history>b58c923c11028110feb7b8b63714f56b:2017279630</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b29c9a3c87028110b922ca280cbb3539</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-03 01:08:19</sys_created_on>
+        <sys_db_object display_value="" name="ticket_tab_configuration">ticket_tab_configuration</sys_db_object>
+        <sys_id>41542f19d3a74e2ca3bb35b9cdfd2e84</sys_id>
+        <sys_metadata>ca7c963c87028110b922ca280cbb35da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_scope_delete display_value="">2dd86e927ee649609a5b3a0230a10d24</sys_scope_delete>
+        <sys_update_name>ticket_tab_configuration_ca7c963c87028110b922ca280cbb35da</sys_update_name>
+        <sys_update_version display_value="ticket_tab_configuration_ca7c963c87028110b922ca280cbb35da">7d8c923c87028110b922ca280cbb356b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-03 01:08:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
