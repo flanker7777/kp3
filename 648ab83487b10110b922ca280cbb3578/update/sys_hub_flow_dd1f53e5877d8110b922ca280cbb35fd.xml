@@ -1,0 +1,2253 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>true</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>一次承認者に入力があるとsys_approvalに自動登録する。</description>
+        <internal_name>1</internal_name>
+        <label_cache>[{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.table_name","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.record","label":"7➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.Table","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.__dont_treat_as_error__","label":"11➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.__action_status__","label":"11➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.table_name","label":"11➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.record","label":"11➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.__dont_treat_as_error__","label":"10➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.__action_status__","label":"10➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.error_message","label":"10➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.status","label":"10➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.Table","label":"10➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.Record","label":"10➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.Table","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.table_name","label":"6➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.record","label":"6➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.state","label":"Trigger➛申請書承認アプリ Record➛ステータス","reference":"","reference_display":"ステータス","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"state"},{"name":"Created_1.current.approval","label":"Trigger➛申請書承認アプリ Record➛承認","reference":"","reference_display":"承認","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"approval"},{"name":"ee59bf27-b809-4f9e-904f-e1dba83bdc74.approval_state","label":"2➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee59bf27-b809-4f9e-904f-e1dba83bdc74.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee59bf27-b809-4f9e-904f-e1dba83bdc74.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"},{"name":"5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.jimukyoku.email","label":"Trigger➛申請書承認アプリ Record➛一次承認者➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.assigned_to.email","label":"Trigger➛申請書承認アプリ Record➛事務局担当➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.number","label":"Trigger➛申請書承認アプリ Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_563475_3_kp1","column_name":"number"},{"name":"Created_1.current.description","label":"Trigger➛申請書承認アプリ Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_563475_3_kp1","column_name":"description"},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.record","label":"5➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.table_name","label":"5➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.record","label":"1➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.table_name","label":"1➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_choice_1","label":"Trigger➛申請書承認アプリ Record➛審査結果","reference":"","reference_display":"審査結果","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"u_choice_1"},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.record.u_choice_1","label":"1➛申請書承認アプリ Record➛審査結果","reference":"","reference_display":"審査結果","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"u_choice_1"},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.record","label":"7➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.table_name","label":"7➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.jimukyoku.email","label":"Trigger➛申請書承認アプリ Record➛一次承認者➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created or Updated_1.current.assigned_to.email","label":"Trigger➛申請書承認アプリ Record➛事務局担当➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.record.watch_list","label":"1➛申請書承認アプリ Record➛ウォッチリスト","reference":"sys_user","reference_display":"User","type":"glide_list","base_type":"glide_list","parent_table_name":"x_563475_3_kp1","column_name":"watch_list"},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛申請書承認アプリ Record➛概要説明","reference":"","reference_display":"概要説明","type":"string","base_type":"string","parent_table_name":"x_563475_3_kp1","column_name":"short_description"},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.record","label":"3➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.table_name","label":"3➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"}]</label_cache>
+        <master_snapshot>e9a367e9877d8110b922ca280cbb353d</master_snapshot>
+        <name>申請書承認アプリ 初回登録時</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>ae52019a87468510b922ca280cbb35c2</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:38:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dd1f53e5877d8110b922ca280cbb35fd</sys_id>
+        <sys_mod_count>64</sys_mod_count>
+        <sys_name>申請書承認アプリ 初回登録時</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name>sys_hub_flow_dd1f53e5877d8110b922ca280cbb35fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:53</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=dd1f53e5877d8110b922ca280cbb35fd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dd1f53e5877d8110b922ca280cbb35fd"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_563475_3_kp1">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-07 10:24:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae52019a87468510b922ca280cbb35c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <table>x_563475_3_kp1</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"2652019a87468510b922ca280cbb35c3","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>dd1f53e5877d8110b922ca280cbb35fd</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-07 10:24:52</sys_created_on>
+        <sys_id>2652019a87468510b922ca280cbb35c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <trigger display_value="">ae52019a87468510b922ca280cbb35c2</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>2652019a87468510b922ca280cbb35c3</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-07 10:24:52</sys_created_on>
+        <sys_id>e652019a87468510b922ca280cbb35c3</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN2652019a87468510b922ca280cbb35c3"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN04103cd18706c110b922ca280cbb35d2"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:31:02</sys_created_on>
+        <sys_id>04103cd18706c110b922ca280cbb35d2</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=04103cd18706c110b922ca280cbb35d2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>04103cd18706c110b922ca280cbb35d2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:31:02</sys_created_on>
+        <sys_id>08103cd18706c110b922ca280cbb35d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:31:02</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>04103cd18706c110b922ca280cbb35d2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:31:02</sys_created_on>
+        <sys_id>40103cd18706c110b922ca280cbb35d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:31:02</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN951a7c5887c20110b922ca280cbb35fb"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <label>申請書ステージ</label>
+        <order>0</order>
+        <stage_id>f0ed0825-6409-49cb-a3ac-3087ba8cd699</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:40:54</sys_created_on>
+        <sys_id>951a7c5887c20110b922ca280cbb35fb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:31:03</sys_updated_on>
+        <type>standard</type>
+        <value>askfor1stapproval</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN1d1f93e5877d8110b922ca280cbb3500"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dd1f53e5877d8110b922ca280cbb35fd</id>
+        <name>申請書承認アプリ1</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:38:30</sys_created_on>
+        <sys_id>1d1f93e5877d8110b922ca280cbb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:38:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN6593e3e9877d8110b922ca280cbb358c,b993e3e9877d8110b922ca280cbb3593"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</model>
+        <model_id>dd1f53e5877d8110b922ca280cbb35fd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_dd1f53e5877d8110b922ca280cbb35fd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:10</sys_created_on>
+        <sys_id>6593e3e9877d8110b922ca280cbb358c</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</model>
+        <model_id>dd1f53e5877d8110b922ca280cbb35fd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_dd1f53e5877d8110b922ca280cbb35fd</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>b993e3e9877d8110b922ca280cbb3593</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN3993e3e9877d8110b922ca280cbb35a2,3993e3e9877d8110b922ca280cbb35b9,7d93e3e9877d8110b922ca280cbb35c5,8706276d877d8110b922ca280cbb35b0,87c7950e877d0110b922ca280cbb35a0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment>一次承認依頼</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3993e3e9877d8110b922ca280cbb35a2</sys_id>
+        <sys_mod_count>152</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:59:18</sys_updated_on>
+        <ui_id>ee59bf27-b809-4f9e-904f-e1dba83bdc74</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3993e3e9877d8110b922ca280cbb35a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35a2</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3d93e3e9877d8110b922ca280cbb35a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35a2</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7993e3e9877d8110b922ca280cbb35a6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35a2</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 00:22:04</sys_created_on>
+        <sys_id>8f9bdfcd87ce8110b922ca280cbb3558</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value/>
+        <variable display_value="Approval Conditions">45f2e9920b10030085c083eb37673aee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35a2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>b593e3e9877d8110b922ca280cbb35a6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35a2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>fd93e3e9877d8110b922ca280cbb35a6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3993e3e9877d8110b922ca280cbb35a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>3993e3e9877d8110b922ca280cbb35a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7193e3e9877d8110b922ca280cbb35a6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{Created_1.current.jimukyoku}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>3993e3e9877d8110b922ca280cbb35a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>fd93e3e9877d8110b922ca280cbb35a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>3993e3e9877d8110b922ca280cbb35a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>bd93e3e9877d8110b922ca280cbb35a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>3993e3e9877d8110b922ca280cbb35a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3993e3e9877d8110b922ca280cbb35a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3993e3e9877d8110b922ca280cbb35a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>f993e3e9877d8110b922ca280cbb35a5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>3993e3e9877d8110b922ca280cbb35a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3593e3e9877d8110b922ca280cbb35a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment>一次承認者へメール通知</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3993e3e9877d8110b922ca280cbb35b9</sys_id>
+        <sys_mod_count>152</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:59:18</sys_updated_on>
+        <ui_id>5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3993e3e9877d8110b922ca280cbb35b9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35b9</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:34:02</sys_created_on>
+        <sys_id>37b0b4158706c110b922ca280cbb3599</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value> </value>
+        <variable display_value="BCC">1d806bf4a70323008299b39f087901e6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35b9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:31:03</sys_created_on>
+        <sys_id>40103cd18706c110b922ca280cbb35e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:20</sys_updated_on>
+        <value/>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35b9</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:31:03</sys_created_on>
+        <sys_id>88103cd18706c110b922ca280cbb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:31:03</sys_updated_on>
+        <value>  </value>
+        <variable display_value="CC">d9806bf4a70323008299b39f087901e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35b9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>bd93e3e9877d8110b922ca280cbb35bc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:20</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35b9</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:31:03</sys_created_on>
+        <sys_id>c4103cd18706c110b922ca280cbb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:31:03</sys_updated_on>
+        <value> 承認依頼が申請されました。</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3993e3e9877d8110b922ca280cbb35b9</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>f993e3e9877d8110b922ca280cbb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3993e3e9877d8110b922ca280cbb35b9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_bcc</field>
+        <id>3993e3e9877d8110b922ca280cbb35b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 00:22:04</sys_created_on>
+        <sys_id>4f9bdfcd87ce8110b922ca280cbb355b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>3993e3e9877d8110b922ca280cbb35b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7d93e3e9877d8110b922ca280cbb35bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 00:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>3993e3e9877d8110b922ca280cbb35b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7993e3e9877d8110b922ca280cbb35bc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:31:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>3993e3e9877d8110b922ca280cbb35b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>b593e3e9877d8110b922ca280cbb35bc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:31:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>3993e3e9877d8110b922ca280cbb35b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>b993e3e9877d8110b922ca280cbb35bb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>  {{Created_1.current.jimukyoku.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3993e3e9877d8110b922ca280cbb35b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3193e3e9877d8110b922ca280cbb35bc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3993e3e9877d8110b922ca280cbb35b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>f193e3e9877d8110b922ca280cbb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>承認ステータスを下書きに更新</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <order>5</order>
+        <parent_ui_id>e9a7aed9-90ea-49f8-b499-2c8d8d68b4af</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7d93e3e9877d8110b922ca280cbb35c5</sys_id>
+        <sys_mod_count>152</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:59:18</sys_updated_on>
+        <ui_id>dad89f16-fbfe-4e5d-bfe0-337f5bf430be</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7d93e3e9877d8110b922ca280cbb35c5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d93e3e9877d8110b922ca280cbb35c5</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3193e3e9877d8110b922ca280cbb35c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d93e3e9877d8110b922ca280cbb35c5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7d93e3e9877d8110b922ca280cbb35c7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 07:11:46</sys_updated_on>
+        <value>state=-10^approval=not requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7d93e3e9877d8110b922ca280cbb35c5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7d93e3e9877d8110b922ca280cbb35c5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3993e3e9877d8110b922ca280cbb35c7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7d93e3e9877d8110b922ca280cbb35c5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7593e3e9877d8110b922ca280cbb35c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7d93e3e9877d8110b922ca280cbb35c5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>f993e3e9877d8110b922ca280cbb35c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:08:55</sys_created_on>
+        <sys_id>8706276d877d8110b922ca280cbb35b0</sys_id>
+        <sys_mod_count>144</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:59:18</sys_updated_on>
+        <ui_id>80487fb1-e74c-4b67-b407-6e226aa72df7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8706276d877d8110b922ca280cbb35b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8706276d877d8110b922ca280cbb35b0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:08:55</sys_created_on>
+        <sys_id>8306276d877d8110b922ca280cbb35b3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8706276d877d8110b922ca280cbb35b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:08:55</sys_created_on>
+        <sys_id>cb06276d877d8110b922ca280cbb35b2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value>state=2^approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8706276d877d8110b922ca280cbb35b0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8706276d877d8110b922ca280cbb35b0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:08:55</sys_created_on>
+        <sys_id>8706276d877d8110b922ca280cbb35b2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8706276d877d8110b922ca280cbb35b0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:08:55</sys_created_on>
+        <sys_id>cf06276d877d8110b922ca280cbb35b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 04:08:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8706276d877d8110b922ca280cbb35b0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:08:55</sys_created_on>
+        <sys_id>4b06276d877d8110b922ca280cbb35b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 04:08:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <order>7</order>
+        <parent_ui_id>6073befb-173a-4439-997c-4d4d63e3789d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>87c7950e877d0110b922ca280cbb35a0</sys_id>
+        <sys_mod_count>136</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:59:18</sys_updated_on>
+        <ui_id>523697d7-3257-415c-905f-0c0c3b01cf6e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=87c7950e877d0110b922ca280cbb35a0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>87c7950e877d0110b922ca280cbb35a0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>8bc7950e877d0110b922ca280cbb35a2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>87c7950e877d0110b922ca280cbb35a0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>c3c7950e877d0110b922ca280cbb35a2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <value>approval=approved^state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=87c7950e877d0110b922ca280cbb35a0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>87c7950e877d0110b922ca280cbb35a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>8fc7950e877d0110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>87c7950e877d0110b922ca280cbb35a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>cbc7950e877d0110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-22 07:04:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>87c7950e877d0110b922ca280cbb35a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>43c7950e877d0110b922ca280cbb35a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-22 07:04:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN7193e3e9877d8110b922ca280cbb35be,c3c7950e877d0110b922ca280cbb3599"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">3593e3e9877d8110b922ca280cbb35bd</block>
+        <comment>差戻しが選択されると申請者へ、下書きステータスに戻る</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7193e3e9877d8110b922ca280cbb35be</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <ui_id>e9a7aed9-90ea-49f8-b499-2c8d8d68b4af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7193e3e9877d8110b922ca280cbb35be"/>
+    <sys_element_mapping action="delete_multiple" query="id=7193e3e9877d8110b922ca280cbb35be"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7193e3e9877d8110b922ca280cbb35be</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3d93e3e9877d8110b922ca280cbb35c1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 02:47:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ee59bf27-b809-4f9e-904f-e1dba83bdc74.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0fc7950e877d0110b922ca280cbb3598</block>
+        <comment>承認されると事務局へ</comment>
+        <connected_to>e9a7aed9-90ea-49f8-b499-2c8d8d68b4af</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>c3c7950e877d0110b922ca280cbb3599</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <ui_id>6073befb-173a-4439-997c-4d4d63e3789d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c3c7950e877d0110b922ca280cbb3599"/>
+    <sys_element_mapping action="delete_multiple" query="id=c3c7950e877d0110b922ca280cbb3599"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c3c7950e877d0110b922ca280cbb3599</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-22 07:04:23</sys_created_on>
+        <sys_id>c3c7950e877d0110b922ca280cbb359c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-03 05:48:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ee59bf27-b809-4f9e-904f-e1dba83bdc74.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN3593e3e9877d8110b922ca280cbb35cd"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>dd1f53e5877d8110b922ca280cbb35fd</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>3593e3e9877d8110b922ca280cbb35cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8767739e-98a8-490d-a742-3d4051f9601a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN7193e3e9877d8110b922ca280cbb3598,f193e3e9877d8110b922ca280cbb3592"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dd1f53e5877d8110b922ca280cbb35fd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>7193e3e9877d8110b922ca280cbb3598</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dd1f53e5877d8110b922ca280cbb35fd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:11</sys_created_on>
+        <sys_id>f193e3e9877d8110b922ca280cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=dd1f53e5877d8110b922ca280cbb35fd^sys_idNOT IN8ea3a7e9877d8110b922ca280cbb3505"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"8ea3a7e9877d8110b922ca280cbb3505","name":"plan","plan_signature":null}}</plan>
+        <plan_id>dd1f53e5877d8110b922ca280cbb35fd</plan_id>
+        <snapshot>6e3a81d287868510b922ca280cbb35b2</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ea3a7e9877d8110b922ca280cbb3505</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <trigger display_value="">ae52019a87468510b922ca280cbb35c2</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>一次承認者に入力があるとsys_approvalに自動登録する。</description>
+        <internal_name>1</internal_name>
+        <label_cache>[{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.table_name","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"015dbe2e-6a27-49c1-800f-8f9fec17783a.record","label":"7➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.Table","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c52a4f0a-b505-44ef-82ac-f3642fd191d3.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.__dont_treat_as_error__","label":"11➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.__action_status__","label":"11➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.table_name","label":"11➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5e7cd93-10d8-416f-b3f2-bb50aebcccb3.record","label":"11➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.__dont_treat_as_error__","label":"10➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.__action_status__","label":"10➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.error_message","label":"10➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.status","label":"10➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.Table","label":"10➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2a3201a-69dd-4a3b-9de1-9f9efec24aec.Record","label":"10➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.Table","label":"2➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7a5be7ce-63a6-4602-8659-5c34e220e872.Record","label":"2➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.table_name","label":"6➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcde330a-f160-4ff4-8775-2daaf4587732.record","label":"6➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.state","label":"Trigger➛申請書承認アプリ Record➛ステータス","reference":"","reference_display":"ステータス","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"state"},{"name":"Created_1.current.approval","label":"Trigger➛申請書承認アプリ Record➛承認","reference":"","reference_display":"承認","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"approval"},{"name":"ee59bf27-b809-4f9e-904f-e1dba83bdc74.approval_state","label":"2➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee59bf27-b809-4f9e-904f-e1dba83bdc74.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee59bf27-b809-4f9e-904f-e1dba83bdc74.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"},{"name":"5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.jimukyoku.email","label":"Trigger➛申請書承認アプリ Record➛一次承認者➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.assigned_to.email","label":"Trigger➛申請書承認アプリ Record➛事務局担当➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.number","label":"Trigger➛申請書承認アプリ Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_563475_3_kp1","column_name":"number"},{"name":"Created_1.current.description","label":"Trigger➛申請書承認アプリ Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_563475_3_kp1","column_name":"description"},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.record","label":"5➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.table_name","label":"5➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dad89f16-fbfe-4e5d-bfe0-337f5bf430be.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"0172c705-543a-4ae4-ab35-a70ccb318bc4.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.record","label":"1➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.table_name","label":"1➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_choice_1","label":"Trigger➛申請書承認アプリ Record➛審査結果","reference":"","reference_display":"審査結果","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"u_choice_1"},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.record.u_choice_1","label":"1➛申請書承認アプリ Record➛審査結果","reference":"","reference_display":"審査結果","type":"choice","base_type":"choice","parent_table_name":"x_563475_3_kp1","column_name":"u_choice_1"},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.record","label":"7➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.table_name","label":"7➛申請書承認アプリ Table","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"523697d7-3257-415c-905f-0c0c3b01cf6e.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛申請書承認アプリ Record","reference":"x_563475_3_kp1","reference_display":"申請書承認アプリ","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.jimukyoku.email","label":"Trigger➛申請書承認アプリ Record➛一次承認者➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created or Updated_1.current.assigned_to.email","label":"Trigger➛申請書承認アプリ Record➛事務局担当➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"80487fb1-e74c-4b67-b407-6e226aa72df7.record.watch_list","label":"1➛申請書承認アプリ Record➛ウォッチリスト","reference":"sys_user","reference_display":"User","type":"glide_list","base_type":"glide_list","parent_table_name":"x_563475_3_kp1","column_name":"watch_list"},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛申請書承認アプリ Record➛概要説明","reference":"","reference_display":"概要説明","type":"string","base_type":"string","parent_table_name":"x_563475_3_kp1","column_name":"short_description"},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.record","label":"3➛Approval Record","reference":"sysapproval_approver","reference_display":"Approval","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.table_name","label":"3➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae427681-b58f-4cb0-9802-06112dab9d2a.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.jimukyoku","label":"Trigger➛申請書承認アプリ Record➛一次承認者","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_563475_3_kp1","column_name":"jimukyoku"}]</label_cache>
+        <master>true</master>
+        <name>申請書承認アプリ 初回登録時</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="申請書承認アプリ 初回登録時">dd1f53e5877d8110b922ca280cbb35fd</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e9a367e9877d8110b922ca280cbb353d</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e9a367e9877d8110b922ca280cbb353d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e9a367e9877d8110b922ca280cbb353d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e9a367e9877d8110b922ca280cbb353d^sys_idNOT IN39a367e9877d8110b922ca280cbb35a9"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>39a367e9877d8110b922ca280cbb35a9</sys_id>
+        <sys_mod_count>67</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:52</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=39a367e9877d8110b922ca280cbb35a9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 01:39:08</sys_created_on>
+        <sys_id>044d6f4d8702c110b922ca280cbb35cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 01:39:08</sys_updated_on>
+        <value>true</value>
+        <variable display_value="Run On Extended Tables">1c4203b6072200103bf10705afd300b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 00:23:50</sys_created_on>
+        <sys_id>090c97018702c110b922ca280cbb35f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 00:23:50</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>3da367e9877d8110b922ca280cbb35aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 00:23:50</sys_created_on>
+        <sys_id>8d0c97018702c110b922ca280cbb35f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 00:23:50</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 00:23:50</sys_created_on>
+        <sys_id>c90c97018702c110b922ca280cbb35f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 05:56:40</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>fda367e9877d8110b922ca280cbb35aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e9a367e9877d8110b922ca280cbb353d^sys_idNOT IN823ab09887c20110b922ca280cbb3544"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <label>申請書ステージ</label>
+        <order>0</order>
+        <stage_id>f0ed0825-6409-49cb-a3ac-3087ba8cd699</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>823ab09887c20110b922ca280cbb3544</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <type>standard</type>
+        <value>askfor1stapproval</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e9a367e9877d8110b922ca280cbb353d^sys_idNOT INada367e9877d8110b922ca280cbb353e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e9a367e9877d8110b922ca280cbb353d</id>
+        <name>申請書承認アプリ1</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>ada367e9877d8110b922ca280cbb353e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=e9a367e9877d8110b922ca280cbb353d^sys_idNOT IN25a367e9877d8110b922ca280cbb3540,29a367e9877d8110b922ca280cbb356c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</model>
+        <model_id>e9a367e9877d8110b922ca280cbb353d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e9a367e9877d8110b922ca280cbb353d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>25a367e9877d8110b922ca280cbb3540</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</model>
+        <model_id>e9a367e9877d8110b922ca280cbb353d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e9a367e9877d8110b922ca280cbb353d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>29a367e9877d8110b922ca280cbb356c</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e9a367e9877d8110b922ca280cbb353d^sys_idNOT IN31a367e9877d8110b922ca280cbb359f,39a367e9877d8110b922ca280cbb35a7,4e3ab09887c20110b922ca280cbb3535,b9a367e9877d8110b922ca280cbb3593,d327e3ad877d8110b922ca280cbb3520"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>一次承認者へメール通知</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>31a367e9877d8110b922ca280cbb359f</sys_id>
+        <sys_mod_count>86</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <ui_id>5da4a76c-7ba1-4aaf-afbb-ec9b5871b8f2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=31a367e9877d8110b922ca280cbb359f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>31a367e9877d8110b922ca280cbb359f</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:34:13</sys_created_on>
+        <sys_id>22c038158706c110b922ca280cbb35d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <value> 承認依頼が申請されました。</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>31a367e9877d8110b922ca280cbb359f</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>3da367e9877d8110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>31a367e9877d8110b922ca280cbb359f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:34:13</sys_created_on>
+        <sys_id>aac038158706c110b922ca280cbb35d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <value> </value>
+        <variable display_value="BCC">1d806bf4a70323008299b39f087901e6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>31a367e9877d8110b922ca280cbb359f</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:34:13</sys_created_on>
+        <sys_id>e2c038158706c110b922ca280cbb35d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <value>  </value>
+        <variable display_value="CC">d9806bf4a70323008299b39f087901e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>31a367e9877d8110b922ca280cbb359f</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 06:34:13</sys_created_on>
+        <sys_id>e6c038158706c110b922ca280cbb35d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:23</sys_updated_on>
+        <value/>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>31a367e9877d8110b922ca280cbb359f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>fda367e9877d8110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:23</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=31a367e9877d8110b922ca280cbb359f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_bcc</field>
+        <id>31a367e9877d8110b922ca280cbb359f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 00:23:51</sys_created_on>
+        <sys_id>050cd7018702c110b922ca280cbb350a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>31a367e9877d8110b922ca280cbb359f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>bda367e9877d8110b922ca280cbb35a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 00:23:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>31a367e9877d8110b922ca280cbb359f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>b9a367e9877d8110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>31a367e9877d8110b922ca280cbb359f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>f5a367e9877d8110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>31a367e9877d8110b922ca280cbb359f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>f9a367e9877d8110b922ca280cbb35a0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>  {{Created_1.current.jimukyoku.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>31a367e9877d8110b922ca280cbb359f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>71a367e9877d8110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 01:45:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>31a367e9877d8110b922ca280cbb359f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>35a367e9877d8110b922ca280cbb35a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>承認ステータスを下書きに更新</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <order>5</order>
+        <parent_ui_id>e9a7aed9-90ea-49f8-b499-2c8d8d68b4af</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>39a367e9877d8110b922ca280cbb35a7</sys_id>
+        <sys_mod_count>86</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <ui_id>dad89f16-fbfe-4e5d-bfe0-337f5bf430be</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=39a367e9877d8110b922ca280cbb35a7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>35a367e9877d8110b922ca280cbb35a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>39a367e9877d8110b922ca280cbb35a7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>71a367e9877d8110b922ca280cbb35a9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 07:11:49</sys_updated_on>
+        <value>state=-10^approval=not requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=39a367e9877d8110b922ca280cbb35a7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>39a367e9877d8110b922ca280cbb35a7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>3da367e9877d8110b922ca280cbb35a8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>39a367e9877d8110b922ca280cbb35a7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>79a367e9877d8110b922ca280cbb35a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>39a367e9877d8110b922ca280cbb35a7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>fda367e9877d8110b922ca280cbb35a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <order>7</order>
+        <parent_ui_id>6073befb-173a-4439-997c-4d4d63e3789d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>4e3ab09887c20110b922ca280cbb3535</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <ui_id>523697d7-3257-415c-905f-0c0c3b01cf6e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4e3ab09887c20110b922ca280cbb3535"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4e3ab09887c20110b922ca280cbb3535</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>023ab09887c20110b922ca280cbb3538</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-01 04:41:29</sys_updated_on>
+        <value>approval=approved^state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4e3ab09887c20110b922ca280cbb3535</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>c63ab09887c20110b922ca280cbb3538</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-01 04:41:29</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4e3ab09887c20110b922ca280cbb3535"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4e3ab09887c20110b922ca280cbb3535</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>ca3ab09887c20110b922ca280cbb3537</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4e3ab09887c20110b922ca280cbb3535</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>823ab09887c20110b922ca280cbb3537</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-01 04:41:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4e3ab09887c20110b922ca280cbb3535</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>8e3ab09887c20110b922ca280cbb3537</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-01 04:41:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment>一次承認依頼</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>b9a367e9877d8110b922ca280cbb3593</sys_id>
+        <sys_mod_count>86</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <ui_id>ee59bf27-b809-4f9e-904f-e1dba83bdc74</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b9a367e9877d8110b922ca280cbb3593"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9a367e9877d8110b922ca280cbb3593</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>39a367e9877d8110b922ca280cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9a367e9877d8110b922ca280cbb3593</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>75a367e9877d8110b922ca280cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9a367e9877d8110b922ca280cbb3593</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 00:23:51</sys_created_on>
+        <sys_id>8d0cd7018702c110b922ca280cbb3506</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <value/>
+        <variable display_value="Approval Conditions">45f2e9920b10030085c083eb37673aee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9a367e9877d8110b922ca280cbb3593</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>b1a367e9877d8110b922ca280cbb3596</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 00:23:51</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9a367e9877d8110b922ca280cbb3593</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>f9a367e9877d8110b922ca280cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b9a367e9877d8110b922ca280cbb3593"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>b9a367e9877d8110b922ca280cbb3593</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>7da367e9877d8110b922ca280cbb3595</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{Created_1.current.jimukyoku}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>b9a367e9877d8110b922ca280cbb3593</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>71a367e9877d8110b922ca280cbb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>b9a367e9877d8110b922ca280cbb3593</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>b9a367e9877d8110b922ca280cbb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>b9a367e9877d8110b922ca280cbb3593</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>35a367e9877d8110b922ca280cbb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b9a367e9877d8110b922ca280cbb3593</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>f5a367e9877d8110b922ca280cbb3595</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b9a367e9877d8110b922ca280cbb3593</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>31a367e9877d8110b922ca280cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:13:51</sys_created_on>
+        <sys_id>d327e3ad877d8110b922ca280cbb3520</sys_id>
+        <sys_mod_count>84</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <ui_id>80487fb1-e74c-4b67-b407-6e226aa72df7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d327e3ad877d8110b922ca280cbb3520"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d327e3ad877d8110b922ca280cbb3520</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:13:51</sys_created_on>
+        <sys_id>1f27e3ad877d8110b922ca280cbb3521</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 05:17:41</sys_updated_on>
+        <value>state=2^approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d327e3ad877d8110b922ca280cbb3520</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:13:51</sys_created_on>
+        <sys_id>df27e3ad877d8110b922ca280cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 04:13:51</sys_updated_on>
+        <value>x_563475_3_kp1</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d327e3ad877d8110b922ca280cbb3520"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d327e3ad877d8110b922ca280cbb3520</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:13:51</sys_created_on>
+        <sys_id>d727e3ad877d8110b922ca280cbb3521</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 06:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d327e3ad877d8110b922ca280cbb3520</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:13:51</sys_created_on>
+        <sys_id>1727e3ad877d8110b922ca280cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 04:13:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d327e3ad877d8110b922ca280cbb3520</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 04:13:51</sys_created_on>
+        <sys_id>9b27e3ad877d8110b922ca280cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 04:13:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e9a367e9877d8110b922ca280cbb353d^sys_idNOT IN8a3ab09887c20110b922ca280cbb3540,f1a367e9877d8110b922ca280cbb3586"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0fc7950e877d0110b922ca280cbb3598</block>
+        <comment>承認されると事務局へ</comment>
+        <connected_to>e9a7aed9-90ea-49f8-b499-2c8d8d68b4af</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>8a3ab09887c20110b922ca280cbb3540</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <ui_id>6073befb-173a-4439-997c-4d4d63e3789d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8a3ab09887c20110b922ca280cbb3540"/>
+    <sys_element_mapping action="delete_multiple" query="id=8a3ab09887c20110b922ca280cbb3540"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8a3ab09887c20110b922ca280cbb3540</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-01 04:41:29</sys_created_on>
+        <sys_id>8e3ab09887c20110b922ca280cbb3543</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-03 05:49:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ee59bf27-b809-4f9e-904f-e1dba83bdc74.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">3593e3e9877d8110b922ca280cbb35bd</block>
+        <comment>差戻しが選択されると申請者へ、下書きステータスに戻る</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="申請書承認アプリ 初回登録時">e9a367e9877d8110b922ca280cbb353d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>f1a367e9877d8110b922ca280cbb3586</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 10:24:51</sys_updated_on>
+        <ui_id>e9a7aed9-90ea-49f8-b499-2c8d8d68b4af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f1a367e9877d8110b922ca280cbb3586"/>
+    <sys_element_mapping action="delete_multiple" query="id=f1a367e9877d8110b922ca280cbb3586"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f1a367e9877d8110b922ca280cbb3586</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>39a367e9877d8110b922ca280cbb3589</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 02:47:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ee59bf27-b809-4f9e-904f-e1dba83bdc74.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e9a367e9877d8110b922ca280cbb353d^sys_idNOT INb1a367e9877d8110b922ca280cbb35ab"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e9a367e9877d8110b922ca280cbb353d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>b1a367e9877d8110b922ca280cbb35ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8767739e-98a8-490d-a742-3d4051f9601a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e9a367e9877d8110b922ca280cbb353d^sys_idNOT IN7da367e9877d8110b922ca280cbb3572,e5a367e9877d8110b922ca280cbb3568"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e9a367e9877d8110b922ca280cbb353d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>7da367e9877d8110b922ca280cbb3572</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e9a367e9877d8110b922ca280cbb353d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 03:58:27</sys_created_on>
+        <sys_id>e5a367e9877d8110b922ca280cbb3568</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 03:58:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>dd1f53e5877d8110b922ca280cbb35fd</sys_id>
+        <latest_snapshot>e9a367e9877d8110b922ca280cbb353d</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

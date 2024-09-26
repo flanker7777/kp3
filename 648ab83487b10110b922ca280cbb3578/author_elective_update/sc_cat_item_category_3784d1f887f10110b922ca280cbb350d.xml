@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="申請書承認アプリ">f38419b887f10110b922ca280cbb3595</sc_cat_item>
+        <sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-18 09:37:49</sys_created_on>
+        <sys_id>3784d1f887f10110b922ca280cbb350d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.申請書承認アプリ</sys_name>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_update_name>sc_cat_item_category_3784d1f887f10110b922ca280cbb350d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-18 09:37:49</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</application>
+        <file_path/>
+        <instance_id>370d5bd8dbcb738407072f17d49619d9</instance_id>
+        <instance_name>dev89931</instance_name>
+        <name>sc_cat_item_category_3784d1f887f10110b922ca280cbb350d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="申請書承認アプリ">f38419b887f10110b922ca280cbb3595</sc_cat_item><sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-18 09:37:49</sys_created_on><sys_id>3784d1f887f10110b922ca280cbb350d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Services.申請書承認アプリ</sys_name><sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package><sys_policy/><sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope><sys_update_name>sc_cat_item_category_3784d1f887f10110b922ca280cbb350d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-18 09:37:49</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>19174719</payload_hash>
+        <record_name>Services.申請書承認アプリ</record_name>
+        <reverted_from/>
+        <source>a88ab83487b10110b922ca280cbb357a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-18 09:37:50</sys_created_on>
+        <sys_id>7b84d1f887f10110b922ca280cbb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f0c31e1cb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-18 09:37:50</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>b384d1f84ef101109c648db1ba2a0310</update_guid>
+        <update_guid_history>b384d1f84ef101109c648db1ba2a0310:19174719</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Services.申請書承認アプリ">8d881b0e87ce4510b922ca280cbb35d5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-07 02:42:29</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>a6d61528e3ba4df3aaa68638c058f2b9</sys_id>
+        <sys_metadata>3784d1f887f10110b922ca280cbb350d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.申請書承認アプリ</sys_name>
+        <sys_package display_value="申請書承認アプリ" source="x_563475_3">648ab83487b10110b922ca280cbb3578</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="申請書承認アプリ">648ab83487b10110b922ca280cbb3578</sys_scope>
+        <sys_scope_delete display_value="">2dd86e927ee649609a5b3a0230a10d24</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_3784d1f887f10110b922ca280cbb350d</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_3784d1f887f10110b922ca280cbb350d">7b84d1f887f10110b922ca280cbb3510</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-07 02:42:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
